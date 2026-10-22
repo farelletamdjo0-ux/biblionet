@@ -1,6 +1,4 @@
--- =====================================================
--- BiblioNet - Script de création et données de test
--- =====================================================
+
 
 CREATE DATABASE IF NOT EXISTS biblionet CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE biblionet;
@@ -46,7 +44,7 @@ CREATE TABLE emprunts (
     FOREIGN KEY (adherent_id) REFERENCES adherents(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Compte de démo : demo@biblionet.ga / Demo2026!
+
 INSERT INTO users (nom, email, password) VALUES
 ('Bibliothécaire Démo', 'demo@biblionet.ga', '$2y$10$4kZgkADfWok745HQhNyGiu4M5YGPra5na5oT5aVomtAQiYJIoiNym');
 
